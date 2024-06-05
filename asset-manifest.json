@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/inga911/weather-app-react.git/static/css/main.28b5dfae.css",
+    "main.js": "/inga911/weather-app-react.git/static/js/main.c85d6cbe.js",
+    "static/media/bg-cover.mp4": "/inga911/weather-app-react.git/static/media/bg-cover.4ac14725e979ae31db56.mp4",
+    "index.html": "/inga911/weather-app-react.git/index.html",
+    "main.28b5dfae.css.map": "/inga911/weather-app-react.git/static/css/main.28b5dfae.css.map",
+    "main.c85d6cbe.js.map": "/inga911/weather-app-react.git/static/js/main.c85d6cbe.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.28b5dfae.css",
+    "static/js/main.c85d6cbe.js"
+  ]
+}
