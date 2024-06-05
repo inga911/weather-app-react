@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap");
+
+:root {
+  --light-main-txt: rgb(255, 220, 201);
+  --darker-main-txt: #e6ae88;
+  --border: 1px solid rgb(31 31 32 / 7%);
+  --bg-light: rgba(23, 22, 22, 0.769);
+  --bg-dark: #00000099;
+  --box-shadow: 8px 15px 20px 5px #00000099;
+  --box-shadow-2: 8px 5px 14px 1px #00000070;
+}
+
+#root {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  font-family: "Montserrat", sans-serif;
+  user-select: none;
+}
+
+.main {
+  width: 90vw;
+  min-height: 300px;
+  border: var(--border);
+  position: relative;
+  background: var(--bg-light);
+  border-radius: 12px;
+  box-shadow: var(--box-shadow);
+  padding: 30px;
+  color: var(--light-main-txt);
+  overflow: hidden;
+  margin-top: 8vh;
+}
+
+input {
+  line-height: 1.5;
+  padding: 8px 15px;
+  font-size: 16px;
+  width: 300px;
+  margin: auto;
+  border-radius: 30px;
+  background-color: transparent;
+  border: var(--border);
+  outline: none;
+  color: var(--darker-main-txt);
+  box-shadow: var(--box-shadow-2);
+  text-align: center;
+  letter-spacing: 1px;
+  backdrop-filter: blur(8px);
+  text-transform: uppercase;
+}
+
+input::placeholder {
+  color: rgba(235, 233, 233, 0.745);
+  letter-spacing: 1px;
+  font-weight: 200;
+  text-transform: capitalize;
+}
+
+input::selection {
+  background-color: var(--darker-main-txt);
+  color: #0d0d08;
+}
+
+.error-message {
+  text-align: center;
+  padding: 15px;
+  font-weight: 300;
+}
+.bg-blur,
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.bg-blur {
+  backdrop-filter: blur(3px);
+}
+
+.bg-video {
+  object-fit: cover;
+}
+
+.bottom {
+  background-color: var(--bg-dark);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.feels,
+.humidity,
+.wind {
+  width: 125px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.location,
+.temp,
+.description {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 25px 0;
+}
+
+.location {
+  font-size: 35px;
+}
+
+.temp,
+.description {
+  font-size: 30px;
+}
+
+@media (min-width: 992px) {
+  .main {
+    width: 50vw;
+  }
+}
+
+@media (max-width: 576px) {
+  .bottom,
+  .temp-description {
+    flex-direction: column;
+  }
+
+  .temp,
+  .description {
+    margin: 10px 0;
+  }
+
+  .feels,
+  .humidity,
+  .wind {
+    width: 100%;
+    margin: 7px auto;
+  }
+}

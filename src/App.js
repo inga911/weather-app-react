@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import bgCover from "./assets/bg-cover.mp4";
+
+import Main from './components/Main.jsx'
 
 function App() {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <video className="bg-video" autoPlay loop muted>
+        <source src={bgCover} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <Main />
     </div>
   );
 }
