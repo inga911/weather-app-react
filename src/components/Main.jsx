@@ -29,7 +29,6 @@ function Main() {
         .then((res) => {
           setData(res.data);
           setError("");
-          console.log(res.data);
         })
         .catch((error) => {
           if (error.response && error.response.status === 404) {
